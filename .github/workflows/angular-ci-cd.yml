@@ -42,7 +42,7 @@ jobs:
         run: npm run test -- --watch=false --browsers=chromium
 
       - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@v4
         with:
           path: myHomeTown/dist/myHomeTown/browser
 
