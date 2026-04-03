@@ -25,9 +25,12 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        working-directory: ./myHomeTown
 
       - name: Build Angular app
         run: npm run build -- --configuration=production
+        working-directory: ./myHomeTown
 
       - name: Run tests
         run: npm run test -- --watch=false --browsers=ChromeHeadless
+        working-directory: ./myHomeTown
